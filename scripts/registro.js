@@ -56,7 +56,7 @@ function displaySavedName() {
     const savedName = localStorage.getItem('userName');
 
     if (savedName) {
-        savedNameDisplay.textContent = `Hola de nuevo, ${savedName}!`;
+        savedNameDisplay.textContent = `Hola de nuevo!`;
     } else {
         savedNameDisplay.textContent = 'No hay nombre guardado todavía.';
     }
