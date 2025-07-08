@@ -379,7 +379,7 @@
   min-height: 150px;
 }
 
-.resumen {
+.resumen1 {
   flex: 1;
   background-color: #e3f2fd;
   padding: 15px;
@@ -387,12 +387,12 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.resumen p {
+.resumen1 p {
   margin: 8px 0;
   font-size: 15px;
 }
 
-.resumen hr {
+.resumen1 hr {
   margin: 10px 0;
   border: none;
   border-top: 1px solid #ccc;
