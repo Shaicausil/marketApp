@@ -333,7 +333,6 @@
 
 /* ventas */
 
-
 .ventas {
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -417,6 +416,24 @@
   background-color: #45a049;
 }
 
+.producto-encontrado {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.img-producto {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
 /* Estilo específico para el resumen */
 .resumen {
   display: flex;
@@ -450,4 +467,5 @@
   font-weight: bold;
   color: #28a745;
 }
+
 
