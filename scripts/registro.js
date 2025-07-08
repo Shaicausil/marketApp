@@ -1,7 +1,7 @@
 const nameInput = document.getElementById('nameInput'); 
 const contraseñaInput = document.getElementById('contraseña'); 
 const usuario = document.getElementById('usuario'); 
-const botonCuenta = document.getElementById('botonCuenta'); 
+const botonCuenta = document.getElementById('botonCuenta');
 const savedNameDisplay = document.getElementById('savedNameDisplay'); 
 const messageElement = document.getElementById('message'); 
 
