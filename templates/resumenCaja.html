@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumen de Caja</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/estilos.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="titulod">
+        <a href="dashboard.html">
+          <img src="../assets/img/zanahoriaaaaa.jpg" alt=""> Market
+        </a>
+      </li>
+    </ul>
+    <div class="cont-boton">
+      <a href="../demo.html"><button class="boton-login">Salir</button></a>
+    </div>
+  </nav>
+
+  
+  <section class="dashP1">
+    <div class="cont-cajas resumen">
+      <div class="caja resumen-caja">
+        <h2>Resumen de Caja</h2>
+        <div class="contenido-resumen">
+          <p><strong>Total vendido:</strong> $<span id="totalGeneral">0.00</span></p>
+          <p><strong>Pagos en efectivo:</strong> $<span id="totalContado">0.00</span></p>
+          <p><strong>Pagos a crédito:</strong> $<span id="totalCredito">0.00</span></p>
+          <p><strong>Total de ventas:</strong> <span id="cantidadVentas">0</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const ventas = JSON.parse(localStorage.getItem("historialVentas")) || [];
+
+      let totalGeneral = 0;
+      let totalContado = 0;
+      let totalCredito = 0;
+
+      ventas.forEach(v => {
+        totalGeneral += v.total;
+        if (v.metodo === "contado") totalContado += v.total;
+        if (v.metodo === "credito") totalCredito += v.total;
+      });
+
+      document.getElementById("totalGeneral").textContent = totalGeneral.toFixed(2);
+      document.getElementById("totalContado").textContent = totalContado.toFixed(2);
+      document.getElementById("totalCredito").textContent = totalCredito.toFixed(2);
+      document.getElementById("cantidadVentas").textContent = ventas.length;
+    });
+  </script>
+</body>
+</html>

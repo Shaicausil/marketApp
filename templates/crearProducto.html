@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/estilos.css">
+</head>
+<body>
+     <nav>
+            <ul>
+                <li class="titulod"><a href="../templates/dashboard.html"><img src="../assets/img/zanahoriaaaaa.jpg" alt=""> Market</a></li>
+            </ul>                
+            <div class="cont-boton">
+                <a href="demo.html"><button class="boton-login">Salir</button></a>
+                <a href="crearProducto.html"><button class="btnCrearProducto">Crear Producto</button></a>
+            </div>
+    </nav>
+     <section class="form-crear">
+        <h1>CREAR PRODUCTOS</h1>
+        <div class="con-Crear">
+            <div class="cont-inputImg">
+                <input id="imgp" class="cargarImg" type="file" id="imagen" accept="image/*">
+            </div>
+            <div class="cont-caracProductos">
+                <input id="nombre" type="text" placeholder="Nombre del producto">
+                <input id="tipo" class="desplegable" list="categoria" type="text" placeholder="Elige la categoria">
+                <datalist id="categoria">
+                    <option value="Licores">
+                    <option value="Mecato">
+                    <option value="Limpieza">
+                    <option value="Varios">
+                </datalist>
+                <textarea id="descripcion" name="Descripcion" placeholder="Descripcion producto"></textarea>
+                <input id="cantidad" type="number" placeholder="Cantidad">
+                <input id="precio" type="text" placeholder="Precio">
+            </div>
+        </div>
+        <button id="btnAgregarp">Aregar Producto</button>
+        
+        <h2>Productos registrados</h2>
+        <div id="seccionProductos" class="contenedor-productos"></div>
+    </section>
+    <script type="module" src="../scripts/crearProducto.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ventas</title>
+  <link rel="stylesheet" href="../style/estilos.css" />
+</head>
+<body>
+
+   <nav>
+        <ul>
+            <li class="titulod"><a href="../templates/dashboard.html"><img src="../assets/img/zanahoriaaaaa.jpg" alt=""> Market</a></li>
+        </ul>
+        <div class="cont-boton">
+            <a href="demo.html"><button class="boton-login">Salir</button></a>
+        </div>
+    </nav>
+
+    
+    <div class="parte1">
+
+      <div class="ventas">
+        <div class="barra-superior">
+          <h2>Ventas</h2>
+        </div>
+
+        <div class="contenedor-venta">
+          
+          <div class="buscador">
+            <input type="text" id="buscarProducto" placeholder="¿Qué estás buscando?" />
+          </div>
+
+          
+          <div id="productosSeleccionados" class="productos-seleccionados">
+            
+          </div>
+
+          
+          <div class="resumen">
+            
+            <p>Descuento: $<span id="descuento">0</span></p>
+            <p>Subtotal: $<span id="subtotal">0</span></p>
+            <p>Domicilio: $<span id="domicilio">0</span></p>
+            <hr>
+            <p><strong>Total: $<span id="total">0</span></strong></p>
+
+            
+            <div class="acciones">
+              <button onclick="limpiarVenta()"> Limpiar venta</button>
+              <button onclick="pagoCredito()">💳 Pago a crédito</button>
+              <button onclick="pagoContado()">💵 Pago de contado</button>
+              <button onclick="ventaTemporal()"> Venta temporal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/ventas.js"></script>
+</body>
+</html>
+

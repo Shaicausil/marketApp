@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+/*barra*/
+header {
+    background-color: #5e717c;
+;
+}
+
+
+.header-content .logo img{
+    width: 120px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+
+.header-right nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.header-right nav ul li {
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-right nav ul li a{
+    color: white;
+}
+
+
+.header-right nav ul li a:hover{
+    color:gray;
+}
+
+.header-right nav ul li button{
+    width:100px;
+    height: 50px;
+    color: white;
+    background: #184f74;
+    border: none;
+    border-radius: 5px;
+}
+
+/*principal*/
+
+.principal-container{
+    display: flex; 
+    height: 700px;
+}
+
+.purple{
+    background-color: #184f74;
+    width: 50%;
+    padding: 150px 200px;
+    color: white;
+
+}
+
+.purple h1{
+    font-size: 5em;
+
+}
+
+.purple p{
+    margin-top: 50px;
+    
+}
+
+.btn1, .btn2{
+    padding: 12px 30px;
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn1:hover, .btn2:hover{
+    color: #f31084;
+    background-color: white;
+}
+
+
+.buttons-principal{
+    border: gray solid 1px;
+    width: 280px;
+    padding: 5px;
+    margin-top: 50px;
+   
+}
+
+
+.img-right{
+   background-color: #184f74;
+    width: 50%;
+    
+}
+
+.img-right img{
+    margin-top: 140px;
+    height: 300px;
+    
+}
+
+/*laptop*/
+.cont-funcionalidades{
+    height: 600px;
+    background-color: #f1f2f7;
+
+}
+
+.containerF{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cont-funcionalidades h2{
+    color: #184f74;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.img-fun img{
+    padding: 120px;
+    height: 300px;
+}
+
+.alpha{
+    width: 70%;
+}
+
+.text-funcion{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 500px;
+}
+
+.text-funcion h4{
+    color: #184f74;
+    font-size: 40px;
+    font-weight: 40;
+    margin-bottom: 50px;
+}
+
+.text-funcion ul {
+    margin-top: 10px;
+    list-style:none;
+}
+
+.text-funcion ul li{
+    margin-top: 10px;
+    list-style:none;
+}
+
+
+.alpha i{
+    color: #184f74;
+}
+
+
+/* planes*/
+.pricing {
+    background-color: #184f74;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.pricing h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.containersP {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+.containers-plan {
+    display: flex;
+    justify-content: center;
+    width: 300px; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2f7;
+    text-align: center; 
+}
+
+.containers-plan img{
+    width: 150px;
+}
+
+
+
+
+.cont-text {
+    list-style: none; 
+    padding: 0;
+}
+
+.cont-text li {     
+    align-items: center;        
+}
+
+.cont-text li i {
+    width: 20px; 
+    text-align: center;
+}
+
+.rosa{
+    color: #184f74;
+    font-weight: bold;
+}
+
+.negrilla{
+    font-weight: bold;
+}
+
+.text1{
+    padding: 30px;
+}
+
+.numeros{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: #ddd ;
+}
+
+ .precio{
+    font-size: 30px;
+}
+
+.symbol{
+    font-size: 25px;
+}
+
+.numeros p {
+    font-size:10px ;
+}
+
+.btnPricing {
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.iconos{
+    padding-top: 10px;
+}
+
+.rosaT {
+    color: #184f74;
+}
+
+.cosa{
+    color: #1e172f;
+}
+
+.containers-plan button{
+    height: 40px;
+    width: 120px;
+    background-color: #2e2550;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+
+.containers-plan button:hover{
+    background-color: #f31084;
+}
+/*footer*/
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0e2d42;
+    
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div span {
+    color: #f31084;
+}
+
+footer div:nth-child(2) i {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #f31084;
+}

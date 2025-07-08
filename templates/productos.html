@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/style/estilos.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="titulod"><a href="../templates/dashboard.html"><img src="../assets/img/zanahoriaaaaa.jpg" alt=""> Market</a></li>
+        </ul>                
+        <div class="cont-boton">
+            <a href="demo.html"><button class="boton-login">Salir</button></a>
+            <a href="crearProducto.html"><button class="btnCrearProducto">Crear Producto</button></a>
+        </div>
+    </nav>
+
+    <button class="botonIA">🤖</button>
+
+    <h2 style="text-align:center; margin-top: 20px;">Productos añadidos:</h2>
+    <div id="contenedor-producto" class="seccionProductos" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contenedor = document.getElementById("contenedor-producto");
+            const productos = JSON.parse(localStorage.getItem("productos")) || [];
+
+            if (productos.length > 0) {
+                productos.forEach(producto => {
+                    const productoHTML = `
+                        <div class="producto" style="border: 1px solid #ccc;background-color: #fff ; padding: 10px; border-radius: 10px; width: 200px;">
+                            <img src="${producto.imagen}" alt="Imagen del producto" style="width:100%; border-radius: 5px;">
+                            <h3>${producto.nombre}</h3>
+                            <p><strong>Tipo:</strong> ${producto.tipo}</p>
+                            <p>${producto.descripcion}</p>
+                            <p><strong>Precio:</strong> $${producto.precio}</p>
+                            <p><strong>Cantidad:</strong> $${producto.Inputcantidad}</p>
+                        </div>
+                    `;
+                    contenedor.insertAdjacentHTML("beforeend", productoHTML);
+                });
+            } else {
+                contenedor.innerHTML = "<p style='text-align:center;'>No hay productos registrados.</p>";
+            }
+        });
+    </script>
+
+    <script type="module" src="../scripts/inteligenciaArtificial.js"></script>
+</body>
+</html>
+

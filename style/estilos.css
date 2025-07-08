@@ -1,0 +1,453 @@
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #184f74;
+            color: #333;
+        }
+        nav{
+         
+            background-color: #fff; 
+            margin-bottom:10px ;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        nav li{
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+
+        }
+
+         .titulod img{
+            height: 70px;
+            width: 70px;
+            
+        }
+
+        .titulod a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #184f74;
+        }
+        .cont-boton{
+            align-items: center;
+            display: flex;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 0px 10px 10px 0px;
+            box-shadow: 8px rgba(0.3,0,0,0);
+            text-align: center;
+            display: block;
+            display: grid;
+            align-items: center;
+        }
+        .container-logo{
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: 8px rgba(0,0,0,0.1);
+            text-align: center;
+            display: block;
+
+        }
+        .container-logo img{
+            width: 400px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        input[type="number"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        .caja-pas[type="password"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        .boton-registro {
+            padding: 12px 25px;
+            background-color: #141516;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .boton-cuenta{
+            width: 200px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .boton-login{
+            padding: 12px 25px;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            border: 1px solid black;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .con-cuentabtn{
+            display: flex;
+            justify-content:center;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        p#savedNameDisplay {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        p#message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        .inputs{
+            display: block;
+            flex-direction: column;
+        }
+        .registro{
+            display: block;
+            flex-direction: column;
+        }
+        .link-registro{
+            text-decoration: none;
+            color: black;
+        }
+        .parte1{
+            display: flex;
+            justify-content: center;
+            padding: 0px 30px;
+        }
+        .tituloDas{
+            color: #141516;
+        }
+        .dashP1{
+            background-color: white;
+            margin: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+
+        }
+        .cont-cajas{
+            display: flex;
+            align-items: center;
+
+        }
+        .caja{
+            width: 200px;
+            height: 200px;
+            color: #141516;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
+            margin: 10px;  
+            text-align: center; 
+            font-size: 0.8em ;
+            padding: 20px;
+        }
+        .caja:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.03);
+        }
+        .cajita{
+            width: 100px;
+        }
+        .imgProductos{
+            width: 90px;
+        }
+        .imgVentas{
+            width: 100px;
+        }
+        .imgIa{
+            width: 100px;
+        }
+        .imgTienda{
+            width: 400px;
+        }
+        .form-crear{
+            background-color: #fdfffe;
+            padding: 30px;
+            margin: 0% 40px;
+            border-radius: 20px;
+            text-align: center;
+           
+
+        }
+        .desplegable{
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        .con-Crear{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .cargarImg{
+            width: 90%;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+        }
+        .cont-inputImg{
+            width: 50%;
+        }
+        .cont-caracProductos{
+            width: 50%;
+        }
+        textarea{
+           padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;            
+            width: 100%;
+            margin-bottom: 15px;;
+        }
+
+
+
+
+/*ia*/
+
+.botonIA {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #194596;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonIA:hover {
+    background-color: #709beb;
+}
+
+
+/* modales de ia */
+
+#modalIA {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#modalIA > div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  position: relative;
+}
+
+#cerrarModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* ventas */
+
+
+.ventas {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.barra-superior {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenedor-venta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.buscador {
+  flex: 1 1 100%;
+}
+
+.buscador input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.productos-seleccionados {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+}
+
+.resumen {
+  flex: 1;
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.resumen p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.resumen hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.acciones button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.acciones button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo específico para el resumen */
+.resumen {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.resumen-caja {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.resumen-caja h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contenido-resumen p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.contenido-resumen span {
+  font-weight: bold;
+  color: #28a745;
+}
+
