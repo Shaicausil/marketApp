@@ -82,6 +82,10 @@ header {
     
 }
 
+.btn1 a, .btn2 a {
+    color: white;
+}
+
 .btn1, .btn2{
     padding: 12px 30px;
     border: white solid 1px;
