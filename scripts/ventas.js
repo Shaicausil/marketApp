@@ -99,7 +99,7 @@ function ventaTemporal() {
     alert("Venta guardada temporalmente.");
 }
 
-// 💾 Guardar venta en historial
+//  Guardar venta en historial
 function guardarVentaEnHistorial(metodoPago) {
     const historial = JSON.parse(localStorage.getItem("historialVentas")) || [];
 
